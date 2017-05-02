@@ -11,17 +11,17 @@ export default class App extends Component {
           <h2>Little Big Giant</h2>
         </div>
 
-        <div class="flex-box-demo">
+        <div className="flex-box-demo">
 
-          <div class="left-side">
+          <div className="left-side">
             <p>Left side</p>
           </div>
 
-          <div class="middle">
+          <div className="middle">
             <p>Middle</p>
           </div>
 
-          <div class="right-side">
+          <div className="right-side">
             <p>Right side</p>
           </div>
 

@@ -9,13 +9,13 @@ body {
 }
 
 .left-side {
-  flex: 20%;
+  flex: auto;
   text-align: center;
   background-color: #0B4F6C;
 }
 
 .middle {
-  flex: 50%;
+  flex: auto;
   text-align: center;
   background-color: #D81E5B;
 }
