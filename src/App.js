@@ -11,21 +11,20 @@ export default class App extends Component {
           <h2>Little Big Giant</h2>
         </div>
 
-        <div className="flex-box-demo">
-
-          <div className="left-side">
-            <p>Left side</p>
+        <div className="reveal">
+          <div className="reveal curve">
+            <a href="https://github.com/lgrapstein/bear">Github</a>
           </div>
 
-          <div className="middle">
-            <p>Middle</p>
+          <div className="reveal plug">
+            <a href="https://github.com/lgrapstein/bear">Github</a>
           </div>
 
-          <div className="right-side">
-            <p>Right side</p>
+          <div className="reveal paper">
+            <a href="https://github.com/lgrapstein/bear">Github</a>
           </div>
-
         </div>
+
 
       </div>
     )
