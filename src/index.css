@@ -12,7 +12,7 @@ body, html {
     background-image: url("cat.png");
 
     /* Full height */
-    height: 100%;
+    height: 100;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -77,8 +77,8 @@ body, html {
 
 .reveal a {
   font: 45px/300px Helvetica, Arial, sans-serif;
-  text-align: center;
   -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  text-align: center;
   filter: alpha(opacity=0);
   opacity: 0;
 

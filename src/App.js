@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import LittleBigGiant from './LittleBigGiant.png';
 import './App.css';
 
 export default class App extends Component {
@@ -8,11 +9,10 @@ export default class App extends Component {
       <div>
 
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <img src={LittleBigGiant} className="App-logo" alt="logo" />
           <h2>Little Big Giant</h2>
         </div>
         <div className="parallax">
-          <div className="reveal">
             <div className="reveal curve">
               <a href="https://github.com/lgrapstein/bear">Github</a>
             </div>
@@ -26,7 +26,6 @@ export default class App extends Component {
             </div>
           </div>
         </div>
-      </div>
     )
   }
 }
