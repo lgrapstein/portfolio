@@ -10,6 +10,10 @@ export default class App extends Component {
     return (
       <div className="App">
         <img className="App-header" src={LittleBigGiant} alt="logo"/>
+        <div className="display-flex">
+          <a className="flex-auto" href="https://www.linkedin.com/in/laurengrapstein/" target="_blank">Github</a>
+          <a className="flex-auto" href="https://github.com/lgrapstein" target="_blank">LinkedIn</a>
+        </div>
 
         <Music />
 
