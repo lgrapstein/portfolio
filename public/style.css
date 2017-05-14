@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  height: 100%;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.flex-auto {
+  flex: auto;
+}
+
+.parallax {
+  background-image: url("./images/pink.jpg");
+  padding: 10px 0 0 0;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reveal {
+  width: 300px;
+  height: 300px;
+  margin: 50px 50px;
+  animation: fadeinout 2s linear;
+}
+
+.travelshare {
+  background: url(./images/travelshare/travelsharebottom.png) 0px 150px, url(./images/travelshare/travelsharetop.png) 0px 0px, #606060;
+  background-repeat: no-repeat;
+  animation: fadeinout 2s linear;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+  border-radius: 25px;
+}
+
+.travelshare:hover {
+  background: url(./images/travelshare/travelshare.png) 300px 0px, url(./images/travelshare/travelshare.png) -300px 0px, url(./images/travelshare/travelshare-BW.png);
+  animation: fadeinout 10s linear;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 10px blue;
+}
+
+.bear {
+  background: url(./images/catbottom.png) 0px 150px, url(./images/cattop.png) 0px -225px, #A0A0A0;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+  border-radius: 25px;
+}
+
+.bear:hover {
+  background: url(./images/catbottom.png) -150px 0px, url(./images/cattop.png) 150px 0px, url(./images/travelshare/travelshare.png);
+  animation: fadeinout 2s linear;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 10px blue;
+}
+
+.wifi {
+  background: url(./images/wifi/wifibottom.png) 0px 150px, url(./images/wifi/wifitop.png) 0px 0px, #D3D3D3;
+  background-repeat: no-repeat;
+  -webkit-transition: background-position 0.3s ease;
+  -moz-transition: background-position 0.3s ease;
+  -o-transition: background-position 0.3s ease;
+  -ms-transition: background-position 0.3s ease;
+  transition: background-position 0.3s ease;
+  border-radius: 25px;
+}
+
+.wifi:hover {
+  background: url(./images/wifi/wifibottom.png) 0px 310px, url(./images/wifi/wifitop.png) 0px -300px, #D3D3D3;
+  animation: fadeinout 2s linear;
+  background-repeat: no-repeat;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 0 10px blue;
+}
+
+.reveal a {
+  font: 40px/300px Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  color: rgb(228, 207, 207);
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  text-align: center;
+  animation: fadeinout 2s linear;
+  filter: alpha(opacity=0);
+  opacity: 0;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.reveal:hover a {
+  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  animation: fadeinout 2s linear;
+  filter: alpha(opacity=100);
+  text-align: center;
+  text-decoration: none;
+  opacity: 1;
+  cursor: pointer;
+  color: green;
+}
