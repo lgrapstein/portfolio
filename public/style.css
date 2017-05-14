@@ -85,7 +85,7 @@ body, html {
 }
 
 .wifi:hover {
-  background: url(./images/wifi/wifibottom.png) 0px 310px, url(./images/wifi/wifitop.png) 0px -300px, #D3D3D3;
+  background: url(./images/wifi/wifibottom.png) 0px 310px, url(./images/wifi/wifitop.png) 0px -300px, url(./images/wifi/wifibw.png);
   animation: fadeinout 2s linear;
   background-repeat: no-repeat;
   text-align: center;
