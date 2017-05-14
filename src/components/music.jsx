@@ -21,11 +21,6 @@ export default class Music extends Component {
     this.byebyemac.play()
   }
 
-  toggleActive() {
-    this.setState({
-      audio: this.state.audio,
-    })
-  }
 
 
   render() {

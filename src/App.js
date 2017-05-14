@@ -10,8 +10,11 @@ export default class App extends Component {
     return (
       <div className="App">
         <img className="App-header" src={LittleBigGiant} alt="logo"/>
+
         <Music />
+
         <div className="parallax">
+
           <div className="reveal travelshare display-flex">
             <a className="flex-auto" href="https://github.com/lgrapstein/travel-share" target="_blank">Github</a>
             <a className="flex-auto" href="http://travel-share.herokuapp.com/" target="_blank">App</a>
@@ -26,7 +29,9 @@ export default class App extends Component {
             <a className="flex-auto" href="https://github.com/lgrapstein/nyc-wifi-2" target="_blank">Github</a>
             <a className="flex-auto" href="https://wifi-freerider.herokuapp.com/" target="_blank">App</a>
           </div>
+
         </div>
+
       </div>
     )
   }
