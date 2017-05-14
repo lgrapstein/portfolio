@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import * as d3 from "d3";
 import '../../public/style.css'
 import byebyemac from '../../public/clips/byebyemac.wav'
 
@@ -8,10 +7,11 @@ export default class Music extends Component {
     super()
 
     this.state = {
-      audio: 'play',
+      sound: true,
     }
 
     this.audio = document.getElementsByTagName("audio")[0]
+    this.audioControlButton = this.audioControlButton.bind(this)
   }
 
   componentDidMount() {
@@ -21,16 +21,31 @@ export default class Music extends Component {
     this.byebyemac.play()
   }
 
+  toggleAudio() {
+    this.setState({
+      sound: !this.state.sound,
+    })
+  }
 
+  audioControlButton() {
+     if (this.sound === true) {
+       this.byebyemac.play()
+       this.setState.sound
+       console.log('music is playing')
+     } else {
+       this.byebyemac.pause()
+       !(this.setState.sound)
+       console.log('music is paused')
+     }
+   }
 
   render() {
     return (
       <div className="container">
-        <audio><source src={byebyemac}></source></audio>
+        <audio src={byebyemac}></audio>
 
         <div className="player">
-
-
+          <button type="button" onClick={this.audioControlButton}>INSERT IMAGE</button>
         </div>
       </div>
     )
