@@ -12,6 +12,7 @@ export default class Music extends Component {
 
     this.audio = document.getElementsByTagName("audio")[0]
     this.audioControlButton = this.audioControlButton.bind(this)
+    this.toggleAudio = this.toggleAudio.bind(this)
   }
 
   componentDidMount() {
@@ -28,13 +29,13 @@ export default class Music extends Component {
   }
 
   audioControlButton() {
-     if (this.sound === true) {
+     if (this.state.sound !== true) {
        this.byebyemac.play()
-       this.setState.sound
+       this.toggleAudio()
        console.log('music is playing')
      } else {
        this.byebyemac.pause()
-       !(this.setState.sound)
+       this.toggleAudio()
        console.log('music is paused')
      }
    }
