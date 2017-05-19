@@ -19,7 +19,7 @@ export default class Music extends Component {
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
     this.nine = audioElements[0]
-    this.nine.volume = 0
+    this.nine.volume = .8
     this.nine.play()
   }
 
@@ -47,7 +47,7 @@ export default class Music extends Component {
         <audio src={nine}></audio>
 
         <div className="player">
-          <button type="button" onClick={this.audioControlButton}>INSERT IMAGE</button>
+          <img type="button" src={playpause} onClick={this.audioControlButton} />
         </div>
       </div>
     )
