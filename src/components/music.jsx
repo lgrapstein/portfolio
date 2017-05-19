@@ -18,7 +18,7 @@ export default class Music extends Component {
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
     this.nine = audioElements[0]
-    this.nine.volume = .8
+    this.nine.volume = 0
     this.nine.play()
   }
 
