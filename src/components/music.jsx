@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../../public/style.css'
 import nine from '../../public/clips/nine.mp3'
+import playpause from '../../public/images/logo/playpause.png'
 
 export default class Music extends Component {
   constructor() {
