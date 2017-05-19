@@ -1,10 +1,19 @@
 {
-  "main.css": "static/css/main.2510138f.css",
-  "main.css.map": "static/css/main.2510138f.css.map",
-  "main.js": "static/js/main.0855f9a1.js",
-  "main.js.map": "static/js/main.0855f9a1.js.map",
+  "main.css": "static/css/main.9acd10bd.css",
+  "main.css.map": "static/css/main.9acd10bd.css.map",
+  "main.js": "static/js/main.e65996bc.js",
+  "main.js.map": "static/js/main.e65996bc.js.map",
   "static/media/LittleBigGiant.png": "static/media/LittleBigGiant.a70e3dec.png",
-  "static/media/byebyemac.wav": "static/media/byebyemac.9e23433b.wav",
-  "static/media/cat.png": "static/media/cat.88ed5d74.png",
-  "static/media/travelshare.png": "static/media/travelshare.c6c942f4.png"
+  "static/media/bearbottom.png": "static/media/bearbottom.d8f01083.png",
+  "static/media/bearleft-bw.png": "static/media/bearleft-bw.a7cceff0.png",
+  "static/media/beartop.png": "static/media/beartop.1c7ec4a7.png",
+  "static/media/nine.mp3": "static/media/nine.cfd2c1d7.mp3",
+  "static/media/pink.jpg": "static/media/pink.82c01fd4.jpg",
+  "static/media/travelshare-BW.png": "static/media/travelshare-BW.d1876926.png",
+  "static/media/travelshare.png": "static/media/travelshare.ed4b193f.png",
+  "static/media/travelsharebottom.png": "static/media/travelsharebottom.2aaae1ea.png",
+  "static/media/travelsharetop.png": "static/media/travelsharetop.84e8561d.png",
+  "static/media/wifibottom.png": "static/media/wifibottom.2402859f.png",
+  "static/media/wifibw.png": "static/media/wifibw.f843876f.png",
+  "static/media/wifitop.png": "static/media/wifitop.123a8dc4.png"
 }

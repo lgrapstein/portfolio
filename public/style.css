@@ -7,6 +7,12 @@ body, html {
   height: 100%;
 }
 
+.social-media {
+  height: 20px;
+  width: 10px;
+  padding: 10px;
+}
+
 .display-flex {
   display: flex;
 }
@@ -75,11 +81,11 @@ body, html {
 .wifi {
   background: url(./images/wifi/wifibottom.png) 0px 150px, url(./images/wifi/wifitop.png) 0px 0px, url(./images/wifi/wifibw.png);
   background-repeat: no-repeat;
-  -webkit-transition: background-position 0.9s ease;
-  -moz-transition: background-position 0.9s ease;
-  -o-transition: background-position 0.9s ease;
-  -ms-transition: background-position 0.9s ease;
-  transition: background-position 0.9s ease;
+  -webkit-transition: background-position 0.8s ease;
+  -moz-transition: background-position 0.8s ease;
+  -o-transition: background-position 0.8s ease;
+  -ms-transition: background-position 0.8s ease;
+  transition: background-position 0.8s ease;
   border-radius: 25px;
 }
 
