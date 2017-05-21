@@ -11,8 +11,8 @@ export default class App extends Component {
       <div className="App">
         <img className="App-header" src={LittleBigGiant} alt="logo"/>
         <div className="social-media display-flex">
-          <a className="flex-auto" href="https://www.linkedin.com/in/laurengrapstein/" target="_blank">Github</a>
-          <a className="flex-auto" href="https://github.com/lgrapstein" target="_blank">LinkedIn</a>
+          <img className="flex-auto" src="../images/social-media/GitHub-Mark-64px.png" target="_blank" alt="github"/>
+          <img className="flex-auto" src="../images/social-media/GitHub-Mark-64px.png" target="_blank" alt="github"/>
         </div>
 
         <Music />

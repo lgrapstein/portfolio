@@ -7,6 +7,12 @@ body, html {
   height: 100%;
 }
 
+.social-media {
+  height: 20px;
+  width: 10px;
+  padding: 10px;
+}
+
 .display-flex {
   display: flex;
 }
@@ -33,14 +39,14 @@ body, html {
 }
 
 .travelshare {
-  background: url(./images/travelshare/travelsharebottom.png) 0px 150px, url(./images/travelshare/travelsharetop.png) 0px 0px, #606060;
+  background: url(./images/travelshare/travelsharebottom.png) 0px 150px, url(./images/travelshare/travelsharetop.png) 0px 0px, rgb(228, 207, 207);
   background-repeat: no-repeat;
   animation: fadeinout 2s linear;
-  -webkit-transition: background-position 0.3s ease;
-  -moz-transition: background-position 0.3s ease;
-  -o-transition: background-position 0.3s ease;
-  -ms-transition: background-position 0.3s ease;
-  transition: background-position 0.3s ease;
+  -webkit-transition: background-position 0.8s ease;
+  -moz-transition: background-position 0.8s ease;
+  -o-transition: background-position 0.8s ease;
+  -ms-transition: background-position 0.8s ease;
+  transition: background-position 0.8s ease;
   border-radius: 25px;
 }
 
@@ -54,19 +60,18 @@ body, html {
 }
 
 .bear {
-  background: url(./images/catbottom.png) 0px 150px, url(./images/cattop.png) 0px -225px, #A0A0A0;
+  background: url(./images/bear/bearbottom.png) 0px 150px, url(./images/bear/beartop.png) 0px 0px;
   background-repeat: no-repeat;
-  -webkit-transition: background-position 0.3s ease;
-  -moz-transition: background-position 0.3s ease;
-  -o-transition: background-position 0.3s ease;
-  -ms-transition: background-position 0.3s ease;
-  transition: background-position 0.3s ease;
+  -webkit-transition: background-position 0.8s ease;
+  -moz-transition: background-position 0.8s ease;
+  -o-transition: background-position 0.8s ease;
+  -ms-transition: background-position 0.8s ease;
+  transition: background-position 0.8s ease;
   border-radius: 25px;
 }
 
 .bear:hover {
-  background: url(./images/catbottom.png) -150px 0px, url(./images/cattop.png) 150px 0px, url(./images/travelshare/travelshare.png);
-  animation: fadeinout 2s linear;
+  background: url(./images/bear/bearleft-bw.png) 0px 0px, url(./images/bear/bearright-bw.png) 150px 0px;
   background-repeat: no-repeat;
   text-align: center;
   text-decoration: none;
@@ -74,19 +79,18 @@ body, html {
 }
 
 .wifi {
-  background: url(./images/wifi/wifibottom.png) 0px 150px, url(./images/wifi/wifitop.png) 0px 0px, #D3D3D3;
+  background: url(./images/wifi/wifibottom.png) 0px 150px, url(./images/wifi/wifitop.png) 0px 0px, url(./images/wifi/wifibw.png);
   background-repeat: no-repeat;
-  -webkit-transition: background-position 0.3s ease;
-  -moz-transition: background-position 0.3s ease;
-  -o-transition: background-position 0.3s ease;
-  -ms-transition: background-position 0.3s ease;
-  transition: background-position 0.3s ease;
+  -webkit-transition: background-position 0.8s ease;
+  -moz-transition: background-position 0.8s ease;
+  -o-transition: background-position 0.8s ease;
+  -ms-transition: background-position 0.8s ease;
+  transition: background-position 0.8s ease;
   border-radius: 25px;
 }
 
 .wifi:hover {
-  background: url(./images/wifi/wifibottom.png) 0px 310px, url(./images/wifi/wifitop.png) 0px -300px, url(./images/wifi/wifibw.png);
-  animation: fadeinout 2s linear;
+  background: url(./images/wifi/wifibottom.png) 0px 350px, url(./images/wifi/wifitop.png) 0px -230px, url(./images/wifi/wifibw.png);
   background-repeat: no-repeat;
   text-align: center;
   text-decoration: none;
@@ -103,11 +107,11 @@ body, html {
   filter: alpha(opacity=0);
   opacity: 0;
 
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.8s ease;
+  -moz-transition: all 0.8s ease;
+  -o-transition: all 0.8s ease;
+  -ms-transition: all 0.8s ease;
+  transition: all 0.8s ease;
 }
 
 .reveal:hover a {

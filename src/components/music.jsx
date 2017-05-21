@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import '../../public/style.css'
-import byebyemac from '../../public/clips/byebyemac.wav'
+import nine from '../../public/clips/nine.mp3'
+import playpause from '../../public/images/logo/playpause.png'
 
 export default class Music extends Component {
   constructor() {
@@ -17,9 +18,9 @@ export default class Music extends Component {
 
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
-    this.byebyemac = audioElements[0]
-    this.byebyemac.volume = .8
-    this.byebyemac.play()
+    this.nine = audioElements[0]
+    this.nine.volume = .8
+    this.nine.play()
   }
 
   toggleAudio() {
@@ -30,11 +31,11 @@ export default class Music extends Component {
 
   audioControlButton() {
      if (this.state.sound !== true) {
-       this.byebyemac.play()
+       this.nine.play()
        this.toggleAudio()
        console.log('music is playing')
      } else {
-       this.byebyemac.pause()
+       this.nine.pause()
        this.toggleAudio()
        console.log('music is paused')
      }
@@ -43,10 +44,10 @@ export default class Music extends Component {
   render() {
     return (
       <div className="container">
-        <audio src={byebyemac}></audio>
+        <audio src={nine}></audio>
 
         <div className="player">
-          <button type="button" onClick={this.audioControlButton}>INSERT IMAGE</button>
+          <img type="button" src={playpause} onClick={this.audioControlButton} />
         </div>
       </div>
     )
