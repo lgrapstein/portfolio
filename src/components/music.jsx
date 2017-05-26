@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import '../../public/style.css'
 import nine from '../../public/clips/nine.mp3'
-import playpause from '../../public/images/logo/playpause.png'
+import play from '../../public/images/logo/play.png'
+import pause from '../../public/images/logo/pause.png'
 
 export default class Music extends Component {
   constructor() {
@@ -9,6 +10,7 @@ export default class Music extends Component {
 
     this.state = {
       sound: true,
+      soundImage: 'play',
     }
 
     this.audio = document.getElementsByTagName("audio")[0]
@@ -19,13 +21,19 @@ export default class Music extends Component {
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
     this.nine = audioElements[0]
-    this.nine.volume = .8
+    this.nine.volume = 0.8
     this.nine.play()
   }
+  //
+  // showAppropriateAudioImage(playOrPause) {
+  //   var p = (playOrPause === this.nine.play) ? this.playImage : !this.playImage
+  //   p.play()
+  // }
 
   toggleAudio() {
     this.setState({
       sound: !this.state.sound,
+      soundImage: !this.state.soundImage,
     })
   }
 
@@ -47,7 +55,7 @@ export default class Music extends Component {
         <audio src={nine}></audio>
 
         <div className="player">
-          <img type="button" src={playpause} onClick={this.audioControlButton} />
+          <img type="button" id="playOrPause" src={this.audioControlButton} onClick={this.audioControlButton} />
         </div>
       </div>
     )
