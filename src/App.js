@@ -12,14 +12,14 @@ export default class App extends Component {
     return (
       <div className="App">
         <img className="App-header" src={LittleBigGiant} alt="logo"/>
-        <div className="social-media display-flex">
-          <a href="https://github.com/lgrapstein" target="_blank">
-            <img className="social" src={GitHub} alt="github"/>
-          </a>
-          <a href="https://laurengrapstein.tumblr.com/" target="_blank">
-            <img className="social" src={Tumblr} alt="tumblr"/>
-          </a>
-        </div>
+          <div className="social-media display-flex">
+            <a href="https://github.com/lgrapstein" target="_blank">
+              <img className="social" src={GitHub} alt="github"/>
+            </a>
+            <a href="https://laurengrapstein.tumblr.com/" target="_blank">
+              <img className="social" src={Tumblr} alt="tumblr"/>
+            </a>
+          </div>
 
         <Music />
 
