@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import LittleBigGiant from '../public/images/logo/LittleBigGiant.png'
 import './App.css'
 import Music from './components/music.jsx'
-import GitHub from '../public/images/social/github64.png'
+import GitHub from '../public/images/social/github.png'
 
 
 export default class App extends Component {
@@ -12,8 +12,12 @@ export default class App extends Component {
       <div className="App">
         <img className="App-header" src={LittleBigGiant} alt="logo"/>
         <div className="social-media display-flex">
-          <img className="social" src={GitHub} target="_blank" alt="github"/>
-          <img className="social" src={GitHub} target="_blank" alt="github"/>
+          <a href="https://github.com/lgrapstein" target="_blank">
+            <img className="social" src={GitHub} alt="github"/>
+          </a>
+          <a href="https://github.com/lgrapstein/travel-share" target="_blank">
+            <img className="social" src={GitHub} alt="github"/>
+          </a>
         </div>
 
         <Music />
