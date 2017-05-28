@@ -3,6 +3,7 @@ import LittleBigGiant from '../public/images/logo/LittleBigGiant.png'
 import './App.css'
 import Music from './components/music.jsx'
 import GitHub from '../public/images/social/github.png'
+import Tumblr from '../public/images/social/github.png'
 
 
 export default class App extends Component {
@@ -15,8 +16,8 @@ export default class App extends Component {
           <a href="https://github.com/lgrapstein" target="_blank">
             <img className="social" src={GitHub} alt="github"/>
           </a>
-          <a href="https://github.com/lgrapstein/travel-share" target="_blank">
-            <img className="social" src={GitHub} alt="github"/>
+          <a href="https://laurengrapstein.tumblr.com/" target="_blank">
+            <img className="social" src={Tumblr} alt="tumblr"/>
           </a>
         </div>
 
