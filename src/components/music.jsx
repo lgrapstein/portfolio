@@ -14,12 +14,15 @@ export default class Music extends Component {
     }
 
     this.audio = document.getElementsByTagName("audio")[0]
+    // this.img = document.getElementsByTagName("img")[0]
     this.audioControlButton = this.audioControlButton.bind(this)
     this.toggleAudio = this.toggleAudio.bind(this)
   }
 
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
+    // var imgElements = document.getElementsByTagName("img")
+    // this.play = imgElements[0]
     this.nine = audioElements[0]
     this.nine.volume = 0.8
     this.nine.play()
@@ -55,7 +58,8 @@ export default class Music extends Component {
         <audio src={nine}></audio>
 
         <div className="player">
-          <img type="button" id="playOrPause" src={this.audioControlButton} onClick={this.audioControlButton} />
+          <img src={this.state.soundImage} />
+          <img type="button" id="playOrPause" src={this.state.soundImage} onClick={this.audioControlButton} />
         </div>
       </div>
     )
