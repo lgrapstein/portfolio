@@ -57,8 +57,9 @@ export default class Music extends Component {
         <audio src={nine}></audio>
 
         <div className="player">
-          <img type="button" id="playOrPause" onClick={this.audioControlButton}/>
-            <img src={this.state.button} />
+          <button id="playOrPause" onClick={this.audioControlButton}>
+            <img src={this.state.button} alt="audio picture" />
+          </button>
         </div>
       </div>
     )
