@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import '../../public/style.css'
 import nine from '../../public/clips/nine.mp3'
-import play from '../../public/images/logo/play.png'
-import pause from '../../public/images/logo/pause.png'
+import buttons from '../../public/images/buttons/pause.png'
 
 export default class Music extends Component {
   constructor() {
@@ -10,19 +9,19 @@ export default class Music extends Component {
 
     this.state = {
       sound: true,
-      soundImage: 'play',
+      button: 'play',
     }
 
     this.audio = document.getElementsByTagName("audio")[0]
-    // this.img = document.getElementsByTagName("img")[0]
+    this.img = document.getElementsByTagName("img")[1]
     this.audioControlButton = this.audioControlButton.bind(this)
     this.toggleAudio = this.toggleAudio.bind(this)
   }
 
   componentDidMount() {
     var audioElements = document.getElementsByTagName("audio")
-    // var imgElements = document.getElementsByTagName("img")
-    // this.play = imgElements[0]
+    var imgElements = document.getElementsByTagName("img")
+    this.buttons = imgElements[1]
     this.nine = audioElements[0]
     this.nine.volume = 0.8
     this.nine.play()
@@ -36,7 +35,7 @@ export default class Music extends Component {
   toggleAudio() {
     this.setState({
       sound: !this.state.sound,
-      soundImage: !this.state.soundImage,
+      button: !this.state.button,
     })
   }
 
@@ -58,8 +57,8 @@ export default class Music extends Component {
         <audio src={nine}></audio>
 
         <div className="player">
-          <img src={this.state.soundImage} />
-          <img type="button" id="playOrPause" src={this.state.soundImage} onClick={this.audioControlButton} />
+          <img type="button" id="playOrPause" onClick={this.audioControlButton}/>
+            <img src={this.state.button} />
         </div>
       </div>
     )
