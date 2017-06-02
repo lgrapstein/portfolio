@@ -3,7 +3,7 @@ import LittleBigGiant from '../public/images/logo/LittleBigGiant.png'
 import './App.css'
 import Music from './components/music.jsx'
 import GitHub from '../public/images/social/github.png'
-import Tumblr from '../public/images/social/github.png'
+import Tumblr from '../public/images/social/tumblr.png'
 
 
 export default class App extends Component {
