@@ -4,7 +4,7 @@ import './App.css'
 import Music from './components/music.jsx'
 import GitHub from '../public/images/social/github.png'
 import Tumblr from '../public/images/social/tumblr.png'
-import LinkedIn from '../public/images/social/tumblr.png'
+import LinkedIn from '../public/images/social/linkedin.png'
 
 
 export default class App extends Component {
