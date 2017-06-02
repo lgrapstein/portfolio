@@ -20,7 +20,7 @@ export default class App extends Component {
             <a href="https://laurengrapstein.tumblr.com/" target="_blank">
               <img className="social" src={Tumblr} alt="tumblr"/>
             </a>
-            <a href="https://laurengrapstein.tumblr.com/" target="_blank">
+            <a href="https://www.linkedin.com/in/laurengrapstein/" target="_blank">
               <img className="social" src={LinkedIn} alt="LinkedIn"/>
             </a>
           </div>
