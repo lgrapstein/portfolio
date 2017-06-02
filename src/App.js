@@ -4,6 +4,7 @@ import './App.css'
 import Music from './components/music.jsx'
 import GitHub from '../public/images/social/github.png'
 import Tumblr from '../public/images/social/tumblr.png'
+import LinkedIn from '../public/images/social/tumblr.png'
 
 
 export default class App extends Component {
@@ -18,6 +19,9 @@ export default class App extends Component {
             </a>
             <a href="https://laurengrapstein.tumblr.com/" target="_blank">
               <img className="social" src={Tumblr} alt="tumblr"/>
+            </a>
+            <a href="https://laurengrapstein.tumblr.com/" target="_blank">
+              <img className="social" src={LinkedIn} alt="LinkedIn"/>
             </a>
           </div>
 
