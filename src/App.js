@@ -12,17 +12,19 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <img className="App-header" src={LittleBigGiant} alt="logo"/>
-          <div className="social-media display-flex">
-            <a href="https://github.com/lgrapstein" target="_blank">
-              <img className="social" src={GitHub} alt="github"/>
-            </a>
-            <a href="https://laurengrapstein.tumblr.com/" target="_blank">
-              <img className="social" src={Tumblr} alt="tumblr"/>
-            </a>
-            <a href="https://www.linkedin.com/in/laurengrapstein/" target="_blank">
-              <img className="social" src={LinkedIn} alt="LinkedIn"/>
-            </a>
+        <div className="Header">
+          <img className="App-header" src={LittleBigGiant} alt="logo"/>
+            <div className="social-media display-flex">
+              <a href="https://github.com/lgrapstein" target="_blank">
+                <img className="social" src={GitHub} alt="github"/>
+              </a>
+              <a href="https://laurengrapstein.tumblr.com/" target="_blank">
+                <img className="social" src={Tumblr} alt="tumblr"/>
+              </a>
+              <a href="https://www.linkedin.com/in/laurengrapstein/" target="_blank">
+                <img className="social" src={LinkedIn} alt="LinkedIn"/>
+              </a>
+            </div>
           </div>
 
         <Music />
