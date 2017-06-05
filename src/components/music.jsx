@@ -23,7 +23,7 @@ export default class Music extends Component {
     var imgElements = document.getElementsByTagName("img")
     this.buttons = imgElements[1]
     this.nine = audioElements[0]
-    this.nine.volume = 0.8
+    this.nine.volume = 0
     this.nine.play()
   }
   //
